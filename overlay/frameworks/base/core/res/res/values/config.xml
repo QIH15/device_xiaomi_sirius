@@ -1052,6 +1052,9 @@
     <dimen name="status_bar_height_portrait">85.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
+    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <bool name="config_defaultRingtonePickerEnabled">true</bool>
+
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">48px</dimen>
 
