@@ -7,7 +7,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.button_jack.profile=volume \
     persist.vendor.audio.button_jack.switch=0 \
     persist.vendor.audio.fluence.audiorec=false \
-    persist.vendor.audio.fluence.speaker=true \
+    persist.vendor.audio.fluence.speaker=false \
     persist.vendor.audio.fluence.tmic.enabled=false \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
@@ -107,7 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.multicam.fpsmatch=TRUE \
     persist.vendor.camera.multicam.framesync=1 \
     persist.vendor.camera.multicam.hwsync=TRUE \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+    vendor.camera.aux.packagelist=com.android.camera
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -128,6 +128,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
+
+# ETC
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=3840x2160 \
+    ro.sf.lcd_density=440 \
+    ro.config.hw_quickpoweron=true \
+    ro.media.panorama.defres=10800x2442 \
+    ro.media.panorama.frameres=3264x1840 \
+    ro.ril.enable.amr.wideband=1 \
+    ro.config.vc_call_steps=20 \
+    ro.media.enc.jpeg.quality=100 \
+    net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960 \
+    net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960 \
+    net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960 \
+    net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960 \
+    net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960 \
+    ro.telephony.call_ring.delay=0 \
+    ring.delay=0
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
